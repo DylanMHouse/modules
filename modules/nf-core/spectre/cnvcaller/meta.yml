@@ -27,8 +27,7 @@ input:
         type: file
         description: mosdepth summary file
         pattern: "*.mosdepth.summary.txt"
-        ontologies:
-          - "http://edamontology.org/format_2330" # TXT format
+        ontologies: []
     - regions_bed:
         type: file
         description: mosdepth binned coverage (to obtain, run Mosdepth with --by <bins>)
@@ -120,8 +119,7 @@ output:
           type: file
           description: Predicted sex chromosome karyotype
           pattern: "*_predicted_karyotype.txt"
-          ontologies:
-            - "http://edamontology.org/format_2330" # TXT format
+          ontologies: []
   versions_spectre:
     - - ${task.process}:
           type: string
